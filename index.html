@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Black Razor Barbershop – projekt koncepcyjny</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap">
+<!-- Marks the page as JS-enabled before first paint (prevents a flash of hidden content) -->
+<script>document.documentElement.classList.add("js");</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="#">BLACK <b>RAZOR</b></a>
+<button class="menu" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+<nav id="site-nav"><a href="#cennik">Cennik</a><a href="#zespol">Zespół</a><a href="#realizacje">Realizacje</a><a class="cta" href="#wizyta">Umów wizytę</a></nav>
+</div></header>
+
+<div class="hero"><div class="pole"></div><div class="wrap">
+<div class="eyebrow">Barbershop · Projekt koncepcyjny</div>
+<h1>Ostre cięcie.<br><em>Spokojna głowa.</em></h1>
+<p>Klasyczne strzyżenie, pielęgnacja brody i golenie brzytwą. Przychodzisz na umówioną godzinę, wychodzisz z pewnością siebie.</p>
+<a class="btn" href="#wizyta">Umów wizytę</a><a class="btn ghost" href="#cennik">Zobacz cennik</a>
+<div class="strip"><span>Strzyżenie</span><span>Broda</span><span>Golenie brzytwą</span><span>Zapis online</span></div>
+</div></div>
+
+<section id="cennik"><div class="wrap rv">
+<div class="kicker">Usługi</div><h2>Cennik</h2>
+<div class="price">
+<div><b>Strzyżenie klasyczne</b><span class="p">80 zł</span><small>Mycie, strzyżenie nożyczkami lub maszynką, stylizacja.</small><small class="t">45 min</small></div>
+<div><b>Broda</b><span class="p">60 zł</span><small>Przycięcie, kontur, pielęgnacja olejkiem.</small><small class="t">30 min</small></div>
+<div><b>Combo: włosy + broda</b><span class="p">130 zł</span><small>Pełny pakiet w jednej wizycie.</small><small class="t">75 min</small></div>
+<div><b>Golenie brzytwą</b><span class="p">70 zł</span><small>Gorący ręcznik, pianka, tradycyjna brzytwa.</small><small class="t">30 min</small></div>
+<div><b>Strzyżenie dziecięce</b><span class="p">60 zł</span><small>Do 12. roku życia.</small><small class="t">30 min</small></div>
+</div>
+<p class="note">Ceny przykładowe. W prawdziwym projekcie zastąpię je cennikiem klienta.</p>
+</div></section>
+
+<section id="zespol" class="surface"><div class="wrap rv">
+<div class="kicker">Ludzie</div><h2>Zespół</h2>
+<div class="team">
+<div class="card"><div class="av">M</div><h3>Marek</h3><p>Klasyczne cięcia i fade. Specjalista od precyzyjnych konturów.</p></div>
+<div class="card"><div class="av">K</div><h3>Kuba</h3><p>Broda, golenie brzytwą i stylizacja. Dba o detale.</p></div>
+<div class="card"><div class="av">A</div><h3>Adam</h3><p>Nowoczesne fryzury i strzyżenie dzieci.</p></div>
+</div>
+</div></section>
+
+<section id="realizacje"><div class="wrap rv">
+<div class="kicker">Galeria</div><h2>Realizacje</h2>
+<div class="gal">
+<div class="tile"><span>Fade</span></div><div class="tile"><span>Taper</span></div><div class="tile"><span>Pompadour</span></div>
+<div class="tile"><span>Broda</span></div><div class="tile"><span>Klasyk</span></div><div class="tile"><span>Brzytwa</span></div>
+</div>
+<p class="note">W miejscu kolorowych kafli pojawią się prawdziwe zdjęcia prac z salonu.</p>
+</div></section>
+
+<section id="wizyta" class="surface"><div class="wrap rv"><div class="contact">
+<div>
+<div class="kicker">Kontakt</div><h2>Umów wizytę</h2>
+<div class="hours"><div><span>Pon – Pt</span><span>10:00 – 20:00</span></div><div><span>Sobota</span><span>10:00 – 16:00</span></div><div><span>Niedziela</span><span>Nieczynne</span></div></div>
+<p class="note">ul. Przykładowa 1, Twoje Miasto · tel. 000 000 000</p>
+</div>
+<form id="booking-form" novalidate>
+<label>Imię<input id="name" type="text" autocomplete="given-name" required></label>
+<label>Usługa<select id="service"><option>Strzyżenie klasyczne</option><option>Broda</option><option>Combo: włosy + broda</option><option>Golenie brzytwą</option></select></label>
+<label>Preferowany termin<input id="date" type="datetime-local"></label>
+<button class="btn" type="submit">Wyślij prośbę</button>
+<div id="form-message" role="status"></div>
+</form>
+</div></div></section>
+
+<footer>© Black Razor Barbershop · Projekt koncepcyjny wykonany przez Yaroslava, dane i ceny są przykładowe.</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
